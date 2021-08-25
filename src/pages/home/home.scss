@@ -17,7 +17,7 @@
         margin: 2rem auto;
 
         .diff {
-            border-bottom: 1px solid gray;
+            // border-bottom: 1px solid gray;
         }
 
         li {
@@ -25,7 +25,7 @@
             cursor: pointer;
             a {
                 text-decoration: none;
-                color: #686868;
+                // color: #686868;
             }
         }
     }
@@ -42,12 +42,13 @@
 
         li {
             list-style: none;
-            border-bottom: 1px solid gray;
+            // border-bottom: 1px solid gray;
             cursor: pointer;
+            
 
             a {
                 text-decoration: none;
-                color: #686868;
+                // color: #686868;
             }
         }
     }
@@ -58,7 +59,7 @@
         margin: 60px auto 0 auto;
 
         .diff {
-            border-bottom: 1px solid gray;
+            // border-bottom: 1px solid gray;
         }
 
         li {
@@ -67,7 +68,7 @@
 
             a {
                 text-decoration: none;
-                color: #686868;
+                // color: #686868;
             }
         }
     }

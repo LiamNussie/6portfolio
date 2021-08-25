@@ -3,11 +3,12 @@ import NavBar from '../../components/navbar/navbar';
 import './home.scss';
 import Picture from './picture.svg';
 import { Link } from 'react-router-dom';
+import ANavBar from '../../components/navbar copy/navbar';
 
 const Home = () => {
     return ( 
         <div className="home">
-            <NavBar />
+            <ANavBar />
             <div className="image">
                 <img src={Picture} alt="visuals" />
                 <p className="running">RUNNING</p>

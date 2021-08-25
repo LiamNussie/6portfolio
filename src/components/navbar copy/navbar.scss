@@ -1,0 +1,11 @@
+.navbar {
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        .right {
+            cursor: pointer;
+        }
+    }
+}

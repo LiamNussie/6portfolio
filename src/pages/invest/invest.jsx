@@ -8,8 +8,8 @@ const Invest = () => {
             <NavBar />
             <ul>
                 <li className="diff"><a target="_blank" rel="noreferrer" href="https://poapool.com/">POA</a></li>
-                <li>ZOE</li>
-                {/* <li><a target="_blank" rel="noreferrer" href="">ZOE</a></li> */}
+                <li className="diff"><a target="_blank" rel="noreferrer" href="https://zoepool.com/">ZOE</a></li>
+                
             </ul>
         </div>
      );
