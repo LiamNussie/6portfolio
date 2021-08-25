@@ -14,7 +14,7 @@ const Home = () => {
             </div>
             <ul className="row1">
                     <li  className="diff"><a rel="noreferrer" target="_blank" href="https://liqwid.finance/">FINANCE</a></li>
-                    <Link style={{textDecoration: "none", color: "black"}} to='/invest'><li>INVEST</li></Link>
+                    <Link style={{textDecoration: "none", color: "#686868"}} to='/invest'><li>INVEST</li></Link>
                     <li className="diff"><a rel="noreferrer" target="_blank" href="https://discord.com/invite/xujZA7XB">COMMUNITY</a></li>
             </ul>
             <p className="building">BUILDING</p>
@@ -26,7 +26,7 @@ const Home = () => {
             </ul>
             <ul className="row3">
                     <li className="diff"><a rel="noreferrer" target="_blank" href="https://cardano.ideascale.com/a/dtd/iFoncier-Land-Registry-Burkina-Faso/366863-48088">LAND</a></li>
-                    <Link style={{textDecoration: "none", color: "black"}} to='/mind'><li>MIND</li></Link>
+                    <Link style={{textDecoration: "none", color: "#686868"}} to='/mind'><li>MIND</li></Link>
                     <li className="diff"><a rel="noreferrer" target="_blank" href="https://cardano.ideascale.com/a/dtd/Food-traceability-solution-Africa/334507-48088">FOOD</a></li>
             </ul>
         </div>

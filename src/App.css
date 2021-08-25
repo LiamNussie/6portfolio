@@ -1,6 +1,13 @@
+@font-face {
+  font-family: projFont;
+  src: url(font/vcr_osd_mono/vcr.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f7f8f1;
+  color: #9A9B9D;
+  font-family: projFont;
 }
