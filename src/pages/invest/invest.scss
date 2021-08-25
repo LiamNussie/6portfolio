@@ -1,0 +1,29 @@
+.invest {
+    padding: 1rem 3rem;
+
+    ul {
+        text-align: center;
+        margin-top: 150px;
+
+        .diff {
+            border-bottom: 1px solid gray;
+        }
+
+        li {
+            list-style: none;
+            cursor: pointer;
+            width: fit-content;
+            margin: 0 auto 50px auto;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .invest {
+        padding: 1rem;
+    }
+}

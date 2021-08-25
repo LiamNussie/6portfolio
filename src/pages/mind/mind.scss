@@ -1,0 +1,52 @@
+.mind {
+    padding: 1rem 3rem;
+
+    .cont {
+        padding: 0 6rem;
+        margin-top: 30px;
+
+        .header {
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        .posts {
+            width: 500px;
+           
+
+            .post {
+                text-transform: uppercase; 
+                margin-bottom: 25px;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    cursor: pointer;
+
+                     .title {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                    // background-color: crimson;
+                    width: fit-content;
+                  }
+                  img {
+                      cursor: pointer;
+                      height: fit-content;
+                      width: fit-content;
+                      margin-top: 6px;
+                    //   background-color: green;
+                  }
+                }
+
+               
+                .body {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                .date {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.home {
+    text-align: center;
+    padding: 1rem 3rem;
+
+    .image {
+        text-align: center;
+
+        .running {
+            letter-spacing: 7px;
+            margin: 40px 0;
+        }
+    }
+    .row1 {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        margin: 2rem auto;
+
+        .diff {
+            border-bottom: 1px solid gray;
+        }
+
+        li {
+            list-style: none;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .building {
+        letter-spacing: 7px;
+        margin: 40px 0;
+    }
+
+    .row2 {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: 0 auto 40px auto;
+
+        li {
+            list-style: none;
+            border-bottom: 1px solid gray;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .row3 {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 60px auto 0 auto;
+
+        .diff {
+            border-bottom: 1px solid gray;
+        }
+
+        li {
+            list-style: none;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home {
+        padding: 1rem;
+
+        .image {
+            .running {
+                margin: 20px 0 40px 0;
+            }
+        }
+        .row1 {
+            width: 100%;
+        }
+        .row2 {
+            flex-direction: column;
+            margin: 0 auto;
+            li {
+                width: fit-content;
+                margin: 0 auto 17px auto;
+            }
+        }
+        .row3 {
+            margin: 10px auto 0 auto;
+
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    .home {
+        padding: 1rem;
+
+        .image {
+            .running {
+                // margin: 20px 0 40px 0;
+            }
+        }
+        .row1 {
+            width: 70%;
+        }
+        .row2 {
+            width: 100%;
+            // flex-direction: column;
+            margin: 0 auto;
+            li {
+                width: fit-content;
+                margin: 0 auto 17px auto;
+            }
+        }
+        .row3 {
+            // margin: 10px auto 0 auto;
+
+        }
+    }
+}

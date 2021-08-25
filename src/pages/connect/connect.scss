@@ -1,0 +1,38 @@
+.connect {
+  padding: 1rem 3rem;
+  text-align: center;
+
+  .field { 
+      margin: 70px auto 0 auto;
+      width: 380px;
+      position: relative;
+
+    .text-box {
+      padding: 1rem;
+      width: 380px;
+      height: 300px;
+      outline: none;
+    }
+    button {
+        position: absolute;
+        outline: none;
+        border: none;
+        bottom: 5%;
+        right: 5%;
+        font-size: 12px;
+        cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .connect {
+        padding: 1rem;
+        .field {
+            width: 100%;
+            .text-box {
+                width: 100%;
+            }
+        }
+    }
+}

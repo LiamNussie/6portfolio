@@ -1,0 +1,16 @@
+.navbar {
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        .rightx {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                cursor: pointer;
+            }
+        }
+    }
+}
