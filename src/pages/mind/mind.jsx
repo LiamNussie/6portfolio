@@ -1,62 +1,52 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from '../../components/navbar/navbar';
 import './mind.scss';
-
-const postList = [
-    {
-      id: 1,
-      title: "EVERYTHING WRONG",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      date: "2ND OCT, 2020",
-    },
-    {
-      id: 2,
-      title: "EVERYTHING WRONG",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "2ND OCT, 2020",
-    },
-    {
-      id: 3,
-      title: "EVERYTHING WRONG",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "2ND OCT, 2020",
-    },
-    {
-      id: 4,
-      title: "EVERYTHING WRONG",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "2ND OCT, 2020",
-    },
-    {
-      id: 5,
-      title: "EVERYTHING WRONG",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "2ND OCT, 2020",
-    },
-  ];
+import axios from 'axios';
+import {baseUrl} from '../../config.json';
+import { toast } from 'react-toastify';
+import ButtonLoader from '../../components/buttonLoader/buttonLoader';
+import PostView from '../../components/postView/postView';
+import { Link } from 'react-router-dom';
+import moment from 'moment';
   
 
 const Mind = () => {
+    const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      (async () => {
+        const {data} = await axios.get(`${baseUrl}/api/feeds`)
+        console.log(data)
+        setPosts(data.posts)
+        setLoading(false)
+      })()
+    }, [])   
+
+
     return ( 
         <div className="mind">
             <NavBar />
+            {loading ? <ButtonLoader /> : 
+      
       <div className="cont">
         <div className="header">MIND</div>
         <div className="posts">
-          {postList.map(({ id, title, body, date }) => {
+          {posts.map(({ _id: id, title, feed, createdAt }) => {
             return (
-              <div className="post" key={id}>
+              <Link key={id} style={{textDecoration: "none"}} to={{ pathname: '/post', state: id}}>
+              <div className="post">
                 <div className="top">
                   <p className="title">{title}</p>
-                  {/* <img src={icon} alt="del-icon" /> */}
                 </div>
-                <p className="body">{body.slice(0,174)}...</p>
-                <p className="date">{date}</p>
+                <p className="body">{feed.slice(0,174)}...</p>
+                <p className="date">{moment(createdAt).format('MMMM Do YYYY, h:mm:ss a')}</p>
               </div>
+              </Link>
             );
           })}
         </div>
-      </div>
+      </div>}
         </div>
      );
 }

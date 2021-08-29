@@ -1,13 +1,30 @@
 .home {
-    text-align: center;
+    // text-align: center;
     padding: 1rem 3rem;
+
+    .side  {
+        position: absolute;
+        bottom: 15%;
+        left: 3%;
+        p {
+            margin-bottom: 30px;
+        }
+    }
 
     .image {
         text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
 
         .running {
-            letter-spacing: 7px;
-            margin: 40px 0;
+            letter-spacing: 5px;
+            word-wrap: none;
+            margin: auto;
+            font-size: 18px
         }
     }
     .row1 {
@@ -79,9 +96,9 @@
         padding: 1rem;
 
         .image {
-            .running {
-                margin: 20px 0 40px 0;
-            }
+            // .running {
+            //     margin: 20px 0 40px 0;
+            // }
         }
         .row1 {
             width: 100%;
