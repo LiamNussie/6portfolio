@@ -10,7 +10,7 @@ const Connect = () => {
                 <textarea name="Message" className="text-box" cols="30" rows="10" placeholder="TYPE A MESSAGE"></textarea>
                 <button>SEND</button>
             </form> */}
-            <p className='tmp'>CONNECT@JOSHUAAKPAN.COM</p>
+            <a className='tmp' href="mailto:connect@joshuaakpan.com">CONNECT@JOSHUAAKPAN.COM</a>
         </div>
      );
 }

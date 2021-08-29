@@ -9,3 +9,11 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        .content {
+            font-size: 14px;
+        }
+    }
+}
