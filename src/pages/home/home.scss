@@ -11,6 +11,17 @@
         }
     }
 
+    .r-side {
+        position: absolute;
+        bottom: 5%;
+        right: 3%;
+
+        li {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+    }
+
     .image {
         text-align: center;
         width: 100%;

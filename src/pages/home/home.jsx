@@ -16,6 +16,9 @@ const Home = () => {
                 <Link style={{textDecoration: "none", color: "#686868"}} to='/building'><p>BUILDING</p></Link>
                 <Link style={{textDecoration: "none", color: "#686868"}} to='/running'><p>RUNNING</p></Link>
             </div>
+            <div className="r-side">
+                <Link style={{textDecoration: "none", color: "#686868"}} to='/mind'><li>MIND</li></Link>
+            </div>
             {/* <ul className="row1">
                     <li  className="diff"><a rel="noreferrer" target="_blank" href="https://liqwid.finance/">FINANCE</a></li>
                     <Link style={{textDecoration: "none", color: "#686868"}} to='/invest'><li>INVEST</li></Link>

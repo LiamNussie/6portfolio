@@ -1,0 +1,70 @@
+.delete-modalx {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: fadeIn 150ms linear 1;
+
+  .wrapperx {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .modalx {
+      width: 500px;
+      background-color: #fff;
+      padding: 1rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      box-sizing: border-box;
+
+      .titx {
+          background-color: #fff;
+          margin-bottom: 50px;
+          margin-top: 35px;
+      }
+      .btns {
+          background-color: #fff;
+          margin-bottom: 20px;
+          text-align: right;
+
+          button {
+              padding: 8px;
+              background-color: #fff;
+              border: none;
+              outline: none;
+              font-size: 17px;
+              margin: 0 10px;
+          }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .delete-modalx {
+        .wrapperx {
+            .modalx {
+                width: 330px;
+            }
+        }
+    }
+}
