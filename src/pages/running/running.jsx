@@ -21,7 +21,7 @@ const Running = () => {
 <ul className="row1">
                     <li  className="diff"><a rel="noreferrer" target="_blank" href="https://liqwid.finance/">FINANCE</a></li>
                     <Link style={{textDecoration: "none", color: "#686868"}} to='/invest'><li>INVEST</li></Link>
-                    <li className="diff"><a rel="noreferrer" target="_blank" href="https://discord.com/invite/xujZA7XB">COMMUNITY</a></li>
+                    <li className="diff"><a rel="noreferrer" target="_blank" href="https://abcdevs.com">COMMUNITY</a></li>
             </ul>
                 
             </ul>
